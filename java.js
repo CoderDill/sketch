@@ -26,8 +26,9 @@ $('document').ready(function(){
 $('#new').on('click', function(){
 	
 var boxSize = prompt("Enter grid amount.");
-$('#container').empty();
+
 	var size = 480 / boxSize; 
+	$('#container').empty();
 	for (var i=0; i<boxSize; i++){
 		for (var j=0; j<boxSize; j++) {
 			$("#container").append("<div class='squares'></div>");
