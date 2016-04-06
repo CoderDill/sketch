@@ -24,9 +24,10 @@ $('document').ready(function(){
   
 
 $('#new').on('click', function(){
-	$('#container').empty();
+	
 
 var boxSize = prompt("Enter grid amount.");
+$('#container').empty();
 	var size = 480 / boxSize; 
 	for (var i=0; i<boxSize; i++){
 		for (var j=0; j<boxSize; j++) {
